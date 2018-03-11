@@ -1,0 +1,80 @@
+
+.page-header{
+    background-color: grey;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    padding: 0px;
+}
+
+
+.header-right{
+    margin: 7px;
+}
+
+.header-right{
+    float: right;
+}
+
+ul.nav{
+    margin-left: 0; 
+    padding: 0;
+    list-style-type: none;
+}
+
+ul.nav a{
+    display: block;
+    width: 7em;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background: grey;
+   border-radius: 1px solid;
+}
+.nav li{
+    float: left;
+}
+
+ul.nav li:last-child a{
+border-radius: 1px solid ;
+}
+
+ul.nav a:hover{
+    background: black;
+    color: white;
+    border-radius: 10px ;
+}
+
+.header-left{
+    float: left;   
+}
+
+li{
+    font-size: 18px;
+}
+
+body{
+    background-color: black;
+}
+
+.page-fotorama{
+    background-color: white;
+    width: 88%;
+    margin-left: 100px;
+    margin-top: 25px;
+    height: 1000px;
+}
+
+.fotorama{
+   margin-left: 30px;
+   
+}
+.information{
+    clear: both;
+    margin-left: 30px;
+}
+
+.prise{
+    margin-top: 100px;
+    margin-left: 350px;
+}

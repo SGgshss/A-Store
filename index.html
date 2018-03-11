@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>A-Store</title>
+    <link href="res/css/main.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div class="page-header">
+        <div class="header-left">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQte993_KpQmRfkAFqY4XrzFQIjLhCeoJ3CJDbQpd33rh9hr6jMUg" width="250px"
+                height="85px">
+        </div>
+        <div class="header-right">
+            <ul class="nav">
+                <li>
+                    <a href="#C1">Home</a>
+                </li>
+                <li>
+                    <a href="#C2">Goods</a>
+                </li>
+                <li>
+                    <a href="#C3">Contacts</a>
+                </li>
+                <li>
+                    <a href="#C4">About web-page</a>
+                </li>
+                <li>
+                    <a href="#C5">Opinions</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- FOTORAMA -->
+    <div class="fotorama" data-loop="true" data-autoplay="2500" data-keyboard="true" data-maxwidth="100%" data-width="100%" data-height="550px">
+        <img src="data:image/jpeg;base64,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">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8F8Kt_2U6Cs5VWvXMIOnVLxGpvCv9Sf-CgWaGfSS4HbB7bFPL">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm3OdNKvVK1Cq6iQWJF-ccPggV6gk2R0gRld9xAk_TU9h3wY8e">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2oRnZ75uus-qoJLo5FO9HITVne5ijevl-wL5u9vXZ3tfGHZA9PQ">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT211hmM7dFBBFk1fcpzyCClW3gbHoAWFCjI9Cw5nyLcZ8VDpDG">
+        <img src="http://www.appleholiker.de/wp-content/uploads/2017/12/final-cut-pro-x-hero.jpg">
+    </div>
+    <!-- GOODS -->
+    <a id="C2">
+        <h2>Goods</h2>
+    </a>
+    <div class="goods-page">
+
+        <div class="iPadPro">
+            <a href="res/another/iPad Pro.html" target="_blank">
+                <h2>iPad Pro</h2>
+                <img src="https://store.storeimages.cdn-apple.com/4974/as-images.apple.com/is/image/AppleInc/aos/published/images/i/pa/ipad/pro/ipad-pro-10in-wifi-select-spacegray-201706?wid=470&hei=556&fmt=png-alpha&.v=1505500512829" width="50%" height="300px">
+                <h2>Цена: 20999грн</h2>
+
+
+            </a>
+        </div>
+        <div class="iPhonei6">
+            <a href="res/another/iPhone i6.html" target="_blank">
+                <h2>iPhone 6</h2>
+                <img src="http://cdn.shopify.com/s/files/1/1993/5277/products/apple-iphone-6-plus-unlocked-yabphones-new-zealand-3_grande.png?v=1501167464" width="50%" height="300px">
+                <h2>Цена: 10999грн</h2>
+
+
+            </a>
+        </div>
+        <div class="iPhoneX">
+            <a href="res/another/iPhone X.html" target="_blank">
+                <h2>iPhone X</h2>
+                <img src="http://store-63.ru/image/cache/catalog/iPhone%20X/Xsg-800x800.png" width="50%" height="300px">
+                <h2>Цена: 29999грн</h2>
+
+
+            </a>
+        </div>
+        <div class="MacBookPro">
+            <a href="res/another/MacBook Pro.html" target="_blank">
+                <h2>MacBook Pro</h2>
+                <img src="https://www.pngarts.com/files/1/MacBook-Pro-Transparent-Image-393x279.png" width="50%" height="300px">
+                <h2>Цена: 39999грн</h2>
+
+
+            </a>
+        </div>
+        <div class="MacBook">
+            <a href="res/another/MacBook.html" target="_blank">
+                <h2>MacBook</h2>
+                <img src="http://www.simplesystems.org/users/glennrp/rogue_chrm_chunks/Macbook_no_chrm.png" width="50%" height="300px">
+                <h2>Цена: 24999грн</h2>
+
+
+            </a>
+        </div>
+        <div class="iPadAir">
+            <a href="res/another/iPad Air.html" target="_blank">
+                <h2>iPad Air</h2>
+                <img src="https://cdn.shopify.com/s/files/1/2302/7371/products/7c95ec_8bcd118c52204fa48ba0a01200d150e6_mv2_a97f630f-596c-4af1-93ad-4771a546508a_768x.png?v=1503762495" width="50%" height="300px">
+                <h2>Цена: 9499грн</h2>
+
+
+            </a>
+        </div>
+        <div class="iPhonei7">
+            <a href="res/another/iPhone i7.html" target="_blank">
+                <h2>iPhone 7</h2>
+                <img src="http://www.pngall.com/wp-content/uploads/2016/06/IPhone-PNG-Picture.png" width="50%" height="300px">
+                <h2>Цена: 17999грн</h2>
+
+
+            </a>
+        </div>
+        <div class="iPhonei8">
+            <a href="res/another/iPhone i8.html" target="_blank">
+                <h2>iPhone 8</h2>
+                <img src="https://boltmobile.ca/wp-content/uploads/2017/09/iphone8-plus-sasktel-boltmobile-silver-front.png" width="50%" height="300px">
+                <h2>Цена: 22499грн</h2>
+
+
+            </a>
+        </div>
+        <div class="iPhonei5">
+            <a href="res/another/iPhone i5.html" target="_blank">
+                <h2>iPhone 5</h2>
+                <img src="http://www.mobocenter.com/wp-content/uploads/2018/01/Apple-iPhone-5s-price.png" width="50%" height="300px">
+                <h2>Цена: 6999грн</h2>
+
+
+            </a>
+        </div>
+        <div class="iPhonei5s">
+            <a href="res/another/iPhone i5s.html" target="_blank">
+                <h2>iPhone 5s</h2>
+                <img src="http://jitelecom.com/wp-content/uploads/2017/12/iphone-5s-front.png" width="50%" height="300px">
+                <h2>Цена: 7999грн</h2>
+
+
+            </a>
+        </div>
+        <div class="iPhonei5se">
+            <a href="res/another/iPhone i5se.html" target="_blank">
+                <h2>iPhone 5se</h2>
+                <img src="http://storerus77.ru/images/stories/virtuemart/product/iphone-se-grey-min.png" width="50%" height="300px">
+                <h2>Цена: 9999грн</h2>
+
+
+            </a>
+        </div>
+        <div class="iPhonei7s">
+            <a href="res/another/iPhone i7s.html" target="_blank">
+                <h2>iPhone 7s</h2>
+                <img src="https://staticshop.o2.co.uk/product/images/iphone7-plus-jet-black_sku-header.png?cb=5f8b06d4ad5f6ecd1e1e424d6d5af78a" width="50%" height="300px">
+                <h2>Цена: 23499грн</h2>
+
+
+            </a>
+        </div>
+        <div class="iPhonei6s">
+            <a href="res/another/iPhone i6s.html" target="_blank">
+                <h2>iPhone 6s</h2>
+                <img src="https://static1.squarespace.com/static/53484e5ae4b095a3fb0ac392/53484f4ae4b05abb16bf919a/56bcfe87f8baf3aa13bc2258/1455226595766/iphone-6s-topic.png?format=500w" width="50%" height="300px">
+                <h2>Цена: 14999грн</h2>
+
+
+            </a>
+        </div>
+        <div class="iPadmini">
+            <a href="res/another/iPad mini.html" target="_blank">
+                <h2>iPad mini</h2>
+                <img src="https://cdn.shopify.com/s/files/1/2302/7371/products/7c95ec_8bcd118c52204fa48ba0a01200d150e6_mv2_768x.png?v=1503762413" width="50%" height="300px">
+                <h2>Цена: 10499грн</h2>
+
+
+            </a>
+        </div>
+        <div class="iPadminii2">
+            <a href="res/another/iPad mini i2.html" target="_blank">
+                <h2>iPad mini 2</h2>
+                <img src="https://ikrasnodar.com/upload/iblock/42f/42ffb90d6c18261785128c507493e3a3.png" width="50%" height="300px">
+                <h2>Цена: 11499грн</h2>
+
+
+            </a>
+        </div>
+        <div class="iPadmini3">
+            <a href="res/another/iPad mini i3.html" target="_blank">
+                <h2>iPad mini 3</h2>
+                <img src="https://apple-pro.ru/upload/medialibrary/6b6/ipad_mini_3_service.png" width="50%" height="300px">
+                <h2>Цена: 12499грн</h2>
+
+
+            </a>
+        </div>
+        <div class="iMacPro">
+            <a href="res/another/iMac Pro.html" target="_blank">
+                <h2>iMac Pro</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Svengraph_IMac.png" width="50%" height="300px">
+                <h2>Цена: 155000грн</h2>
+
+
+            </a>
+        </div>
+        <div class="AirPods">
+            <a href="res/another/Air Pods.html" target="_blank">
+                <h2>Air Pods</h2>
+                <img src="https://www.7storeonline.com/wp-content/uploads/2017/07/Apple_AirPods_MMEF2-karken.png" width="50%" height="300px">
+                <h2>Цена: 6199грн</h2>
+
+
+            </a>
+        </div>
+        <div class="tv">
+            <a href="res/another/tv.html" target="_blank">
+                <h2>tv 4K</h2>
+                <img src="https://image.jimcdn.com/app/cms/image/transf/none/path/s89323aad9fed2119/image/i58e9a85d757e2efd/version/1488813056/apple-tv-4k-hdr.png" width="50%" height="300px">
+                <h2>Цена: 7299грн</h2>
+
+
+            </a>
+        </div>
+        <div class="iWatch">
+            <a href="res/another/iWatch.html" target="_blank">
+                <h2>iWatch</h2>
+                <img src="https://www.ipswstore.com/la-assets/img/device/Watch2,3.png" width="50%" height="300px">
+                <h2>Цена: 7899грн</h2>
+
+
+            </a>
+        </div>
+    </div>
+    <!-- CONTACTS -->
+    <a id="C3">
+        <div class="page-contacts">
+    </a>
+
+    <div class="numbers">
+        <h3>Номера</h3>
+        <ul>
+            <li>
+                +380509987642-Организатор
+            </li>
+            <li>
+                +380507438383-Отвеnственый за доставку
+            </li>
+            <li>
+                +380503245578-Консультант
+            </li>
+        </ul>
+
+    </div>
+    <div class="video">
+        <h3>О гаджетах</h3>
+    <iframe width="800" height="200" src="https://www.youtube.com/embed/QA_CRCEfniw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+    </div>
+
+
+    </div>
+    <!-- ABOUT WEB-PAGE -->
+    <a id="C4">
+        <div class="abaut-web-page">
+    </a>
+    <div class="opinions1">
+        <a id="C4">
+            <h3>О сайте</h3>
+            <p>Лучший товар из всех что вы сможите найти.</p>
+
+
+    </div>
+    <!-- OPINIONS -->
+    <a id="C5"></a>
+    <div class="opinions">
+
+
+
+        <form method="post">
+            <p>Ваш коментарий:</p>
+            <textarea name="comment" id="comment-field" rows="10">Введите текст</textarea>
+            <input type="submit" value="Отправить">
+        </form>
+
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <div class="footer">
+        Copyright @ My syte, 2018
+    </div>
+</body>
+
+</html>
